@@ -1,0 +1,94 @@
+<resources>
+
+    <string name="app_name">SNS All "\n"Viewer</string>
+    <string name="app_title">SNS모아보기 서비스</string>
+    <string name="sns_setting_info">"SNS 로그인을 하시면 서비스를 이용하실 수 있습니다. 가입한 회원정보를 입력해주세요."</string>
+    <string name="sns_login_info">"*네이트,싸이월드를 하나의 아이디로 이용가능하도록 One ID 서비스를 지원합니다.\n*네이트, 싸이월드 중 하나의 계정만 로그인 하더라도 자동 연동되어 동시에 이용할 수 있습니다."</string>
+    <string name="account_setting">계정설정</string>
+    <string name="account_reg">계정등록</string>
+    <string name="cyworld">Cyworld</string>
+    <string name="nateon">NateOn</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="google">Google+</string>
+    <string name="home">Home</string>
+    <string name="menu">메뉴</string>
+    <string name="accept">수락</string>
+    <string name="addGraph_confirm">지인으로 추가하시겠습니까?</string>
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="set_AppUserInfo">사용자정보등록</string>
+    <string name="id_email">아이디(이메일)</string>
+    <string name="password">비밀번호</string>
+    <string name="auto_login">자동로그인</string>
+    <string name="complete_msg">등록되었습니다.</string>
+    <string name="cb_check_msg">선택된정보가없습니다.</string>
+    <string name="all">ALL</string>
+    <string name="upload_phonebook">폰북등록</string>
+    <string name="sns_list_default">SNS 메시지가 없습니다.</string>
+    <string name="sns_reg_default">SNS 모아보기를 위해 가입한 SNS계정을 등록해 주세요.</string>
+    <string name="sns_com">SNS 모아보기</string>
+    <string name="simple_view">간략보기</string>
+    <string name="open_view">펼침보기</string>
+    <string name="refresh">새로고침</string>
+    <string name="finish">종료하기</string>
+    <string name="writer">작성자명</string>
+    <string name="comment">댓글</string>
+    <string name="comment_with_count">댓글(%1$s)</string>
+    <string name="account_add">계정추가</string>
+    <string name="comments">댓글쓰기</string>
+    <string name="send">보내기</string>
+    <string name="enter_contents">내용을 입력해주세요.</string>
+    <string name="input_count">%1$s/140</string>
+    <string name="friends_created">지인생성</string>
+    <string name="friends_recommend">지인추천</string>
+    <string name="friends_list">지인목록</string>
+    <string name="friends_request">일촌신청</string>
+    <string name="request_friends">지인요청</string>
+    <string name="cancel">취소</string>
+    <string name="circle_add">서클에 추가</string>
+    <string name="friend_circle_add">님을 서클에 추가합니다</string>
+    <string name="exceed_char">140자를 초과하여 작성 할 수 없습니다.</string>
+    <string name="ok">확인</string>
+    <string name="to_post">글을 등록하는 중입니다.</string>
+    <string name="selected_contact_upload">선택하신 연락처를 업도르 하시겠습니까?</string>
+    <string name="contact_upload">연락처를 업로드 중입니다.</string>
+    <string name="want_to_quit">SNS 모아보기를 종료하시겠습니까?</string>
+    <string name="empty_data">데이터가 존재하지 않습니다.</string>
+    <string name="thumnail_description">SnsThumbnail</string>
+    <string name="request_cyworld_friend_1">%1$s님께 일촌을 신청합니다.</string>	
+    <string name="request_cyworld_friend_2">%1$s을 %2$s님의</string>
+    <string name="hint_cyworld_friend">일촌</string>
+    <string name="hint_lets_cyworld_friend">우리 일촌해요.</string>
+    <string name="msg_update">업데이트중&#8230;</string>
+    <string name="all_contacts">전체 연락처(%1$s)</string>
+    <string name="msg_upload_contact">선택한 연락처를 업로드하시겠습니까?</string>
+    <string name="loding">로딩중...</string>
+    <string name="not_exist_sns">연결된 SNS가 존재하지 않습니다.</string>
+        
+    <!-- Menu Preference -->
+    <string name="show_sns">SNS 보기</string>
+    <string name="show_all_sns">SNS 모아보기</string>
+    
+    <string name="friends">친구</string>
+    <string name="recommend_friend">지인추천</string>
+    <string name="make_friend">지인생성</string>
+    <string name="account">계정</string>
+    <string name="friendsList">지인관리</string>
+    
+    <string name="key_all_sns">key_as</string>
+    <string name="key_recommend_friend">key_rf</string>
+    <string name="key_make_friend">key_mf</string>
+    <string name="key_account">key_acc</string>
+    
+    <string name="key_upload_phonebook">key_pb</string>
+	<string name="key_friend_list">key_fl</string>
+    
+    <string name="auth_error">인증이 실패 하였습니다.</string>
+    <string name="upload">업로드</string>
+    <string name="upload_confirm">선택하신 연락처를 업로드 하시겠습니까?</string>
+    <string name="progress_msg">로딩중...</string>
+    <string name="no_timeinfo">날짜정보 없음</string>
+    <string name="not_exist_feed_id">Feed id가 존재하지 않습니다.</string>
+    <string name="auto">자동</string>
+</resources>

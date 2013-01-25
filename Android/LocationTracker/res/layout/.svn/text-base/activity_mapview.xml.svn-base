@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    <ImageView
+	        android:id="@+id/map_iv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	    <LinearLayout
+	        android:layout_alignParentBottom="true"
+	        android:layout_gravity="bottom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:visibility="gone" >   
+	        <TextView 
+	            android:id="@+id/selected_location"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            />   
+	        <Button
+         	     android:id="@+id/location_confirm"
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1"
+	             android:text="@string/call_address_setting"/>
+	       
+	</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

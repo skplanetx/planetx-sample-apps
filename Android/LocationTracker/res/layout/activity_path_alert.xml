@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+      android:id="@+id/title_bar"
+      android:layout_width="fill_parent"
+      android:layout_height="40dp"
+      android:layout_alignParentTop="true"
+      android:layout_gravity="center_vertical|center_horizontal"
+      android:gravity="center"
+      android:text="@string/path_alert"
+      android:textColor="@color/color_title"
+      android:background="@color/color_titlebar"
+      android:textSize="18sp"/>
+  <LinearLayout 
+      android:id="@+id/header_ly" 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" 
+      android:layout_below="@id/title_bar"
+      android:orientation="vertical">
+    <LinearLayout        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/start_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/start_location"
+                android:layout_centerVertical="true" 
+                android:textSize="19sp"/>
+
+            <Button
+                android:id="@+id/start_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/location_setting"
+                android:layout_centerVertical="true"
+                android:textSize="15sp" />
+		<RelativeLayout		    
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/start_bt"
+            android:layout_toRightOf="@id/start_tv">
+            <AutoCompleteTextView 
+               android:id="@+id/auto_complete_start"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:singleLine="true"    
+               android:hint="@string/input_dest_info" 
+               android:textSize="18sp"
+               android:textColor="@color/black_color"       
+                />
+                <ProgressBar
+                    android:layout_margin="10dp"
+                    android:id="@+id/search_progress_bar_start"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+			        style="?android:attr/progressBarStyleSmall"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:visibility="gone"
+			        />
+<!--             <EditText             -->
+<!--                 android:id="@+id/start_et"     -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="60dp"                 -->
+<!--                 android:hint="@string/current_location" -->
+<!--                 android:layout_centerVertical="true" -->
+<!--                 android:lines="1" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:textSize="18sp" -->
+<!--                 android:textColor="@color/black_color" /> -->
+<!--             <Button -->
+<!-- 	            android:id="@+id/edit_bt_1" -->
+<!-- 	            android:layout_width="wrap_content" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:layout_alignParentRight="true" -->
+<!-- 	            android:layout_margin="10dp" -->
+<!-- 	            android:background="@drawable/close" -->
+<!-- 	            android:layout_centerVertical="true" -->
+<!-- 	            android:textSize="18sp" -->
+<!-- 	            android:visibility="gone" /> -->
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/dest_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/dest_location"
+                android:layout_centerVertical="true"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/dest_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/location_setting"
+                android:layout_centerVertical="true"
+                android:textSize="15sp" />
+			<RelativeLayout
+		    	android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/dest_bt"
+                android:layout_toRightOf="@id/dest_tv" >
+            <AutoCompleteTextView 
+               android:id="@+id/auto_complete_destination"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:singleLine="true"    
+               android:hint="@string/input_dest_info" 
+               android:textSize="18sp"
+               android:textColor="@color/black_color"       
+                />
+                <ProgressBar
+                    android:layout_margin="10dp"
+                    android:id="@+id/search_progress_bar_destination"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+			        style="?android:attr/progressBarStyleSmall"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:visibility="gone"
+			        />
+<!--             <EditText -->
+<!--                 android:id="@+id/dest_et" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content"                -->
+<!--                 android:hint="@string/input_dest_info" -->
+<!--                 android:layout_centerVertical="true" -->
+<!--                 android:singleLine="true" /> -->
+<!--             <Button -->
+<!-- 	            android:id="@+id/edit_bt_2" -->
+<!-- 	            android:layout_width="wrap_content" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:layout_alignParentRight="true" -->
+<!-- 	            android:layout_margin="10dp" -->
+<!-- 	            android:background="@drawable/close"  -->
+<!-- 	            android:layout_centerVertical="true" -->
+<!-- 	            android:textSize="15sp" -->
+<!-- 	            android:visibility="gone"/> -->
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button 
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/search"
+        android:textSize="15sp"/>
+  </LinearLayout>
+<!--         <LinearLayout -->
+<!--         android:id="@+id/bottom_ly" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:orientation="horizontal" > -->
+
+<!--         <Button -->
+<!--             android:id="@+id/home_bt" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="1" -->
+<!--             android:text="@string/go_home" -->
+<!--             android:textSize="15sp" /> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/company_bt" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="1" -->
+<!--             android:text="@string/go_company" -->
+<!--             android:textSize="15sp" /> -->
+<!--     </LinearLayout> -->
+        <LinearLayout
+        android:id="@+id/bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/home_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/go_home"
+            android:textSize="15sp"
+            android:clickable="true" />
+        <Button
+            android:id="@+id/company_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/go_company"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottom_ly"
+        android:layout_below="@id/header_ly"
+        android:orientation="vertical">
+    <TextView 
+         android:id="@+id/recent_search_path"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:text="@string/recent_search_path"
+         android:textSize="16sp"
+         android:layout_marginLeft="10dp"
+         android:textColor="@color/blue_green_color"
+         android:textStyle="bold"
+         android:visibility="gone"/>
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_recent_search" />        
+    </LinearLayout>
+   
+</RelativeLayout>

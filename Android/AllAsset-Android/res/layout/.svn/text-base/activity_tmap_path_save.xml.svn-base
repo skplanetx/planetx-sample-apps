@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_titlebar"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/home_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/home" />
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/path_setting"
+                android:textColor="@color/color_title"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </LinearLayout>
+    
+	<LinearLayout 
+		android:id="@+id/sub_header_ly" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:layout_below="@id/header_ly"
+		android:orientation="vertical">
+		<LinearLayout        
+			android:layout_width="wrap_content"
+			android:layout_height="0dip"       
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:layout_marginLeft="5dp">
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp" >
+				<TextView
+					android:id="@+id/start_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:text="@string/T200"
+					android:layout_centerVertical="true" 
+					android:textSize="19sp"/>
+				<RelativeLayout			    
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/start_tv">
+					<EditText 
+						android:id="@+id/start_location"
+						android:layout_width="match_parent"
+						android:layout_height="52dp"
+						android:singleLine="true"    
+						android:hint="@string/set_start_point" 
+						android:textSize="18sp"
+						android:paddingRight="50dp"
+						android:imeOptions="actionSearch"
+						android:textColor="@color/black" />
+			        <Button
+			            android:id="@+id/start_clean_bt"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_margin="10dp"
+			            android:visibility="gone"
+			            android:background="@drawable/close" />
+				</RelativeLayout>
+			</RelativeLayout>
+		
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/dest_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:text="@string/T201"
+					android:layout_centerVertical="true"
+					android:textSize="19sp" />
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/dest_tv" >
+					<EditText 
+						android:id="@+id/destination_location"
+						android:layout_width="match_parent"
+						android:layout_height="52dp"
+						android:singleLine="true"    
+						android:hint="@string/set_dest_point" 
+						android:textSize="18sp"
+						android:paddingRight="50dp"
+						android:imeOptions="actionSearch"
+						android:textColor="@color/black" />
+					 <Button
+			            android:id="@+id/desn_clean_bt"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_margin="10dp"
+			            android:visibility="gone"
+			            android:background="@drawable/close" />
+				</RelativeLayout>
+			</RelativeLayout>
+		</LinearLayout>
+		
+		<Button 
+			android:id="@+id/search"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/search"
+			android:textSize="15sp"/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/bottom_ly"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal" >
+		<Button
+		android:id="@+id/confirm_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/confirm"
+			android:textSize="15sp"
+			android:clickable="true" />
+		<Button
+			android:id="@+id/cencel_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/cencel"
+			android:textSize="15sp" />
+	</LinearLayout>
+	
+	<LinearLayout 	
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_above="@id/bottom_ly"
+		android:layout_below="@id/sub_header_ly"
+		android:orientation="vertical">
+		<TextView 
+			android:id="@+id/recent_search_path"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:text="@string/search_result"
+			android:textSize="16sp"
+			android:layout_marginLeft="10dp"
+			android:textColor="@color/solid_blue"
+			android:textStyle="bold"
+			android:visibility="gone"/>
+		<ListView
+			android:id="@+id/android:list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+		<TextView
+			android:id="@+id/android:empty"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="@string/empty_data" />        
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Text</key>
+		<string>네이트온 쪽지</string>
+		<key>Id</key>
+		<string>nateon</string>
+		<key>IsEdit</key>
+		<true/>
+		<key>DefaultLiveText</key>
+		<string>새 쪽지가 없습니다.</string>
+		<key>IsShortcut</key>
+		<true/>
+		<key>IsLive</key>
+		<true/>
+		<key>Name</key>
+		<string>NateOn</string>
+		<key>IsAllowMessage</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Text</key>
+		<string>싸이월드 방명록</string>
+		<key>Id</key>
+		<string>cyworld</string>
+		<key>IsEdit</key>
+		<true/>
+		<key>DefaultLiveText</key>
+		<string>일촌 새글이 없습니다.</string>
+		<key>IsShortcut</key>
+		<true/>
+		<key>IsLive</key>
+		<true/>
+		<key>Name</key>
+		<string>Cyworld</string>
+		<key>DisplayCount</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>Text</key>
+		<string>카테고리 검색</string>
+		<key>Id</key>
+		<string>elevenst</string>
+		<key>IsEdit</key>
+		<true/>
+		<key>DefaultLiveText</key>
+		<string>설정된 카테고리 상품이 없습니다.</string>
+		<key>IsShortcut</key>
+		<true/>
+		<key>IsLive</key>
+		<true/>
+		<key>Name</key>
+		<string>11번가</string>
+	</dict>
+	<dict>
+		<key>Text</key>
+		<string>Top 차트</string>
+		<key>Id</key>
+		<string>melon</string>
+		<key>IsEdit</key>
+		<false/>
+		<key>DefaultLiveText</key>
+		<string>데이터를 가져 올 수 없습니다.</string>
+		<key>IsShortcut</key>
+		<true/>
+		<key>IsLive</key>
+		<true/>
+		<key>Name</key>
+		<string>멜론</string>
+	</dict>
+	<dict>
+		<key>Text</key>
+		<string>목적지 경로 정보</string>
+		<key>Id</key>
+		<string>tmap</string>
+		<key>IsEdit</key>
+		<true/>
+		<key>DefaultLiveText</key>
+		<string>설정된 목적지가 없습니다.</string>
+		<key>IsShortcut</key>
+		<true/>
+		<key>IsLive</key>
+		<true/>
+		<key>Name</key>
+		<string>T-map</string>
+	</dict>
+</array>
+</plist>

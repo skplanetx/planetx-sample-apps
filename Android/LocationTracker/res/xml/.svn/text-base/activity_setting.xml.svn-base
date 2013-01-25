@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<Preference
+	    android:key="@string/favorite_management"
+	    android:layout="@layout/setting_title_bar"/> 
+<!--     <Preference -->
+<!--         android:key="@string/account_setting" -->
+<!--         android:title="@string/account_setting" /> -->
+    <Preference
+        android:key="@string/shortcuts_setting"
+        android:title="@string/shortcuts_setting" />
+    <Preference
+        android:key="@string/message_setting"
+        android:title="@string/message_setting" />
+
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<Preference
+	    android:key="@string/favorite_management"
+	    android:layout="@layout/storage_box_title_bar"/> 
+	<Preference
+	    android:key="@string/favorite_management"
+	    android:title="@string/favorite_management"/> 
+	
+	<Preference
+	    android:key="@string/direct_address_management"
+	    android:title="@string/direct_address_management"/> 	
+	
+	<Preference
+	    android:key="@string/message_send_management"
+	    android:title="@string/message_send_management"/> 	
+	
+	<Preference
+	    android:key="@string/path_management"
+	    android:title="@string/path_management"/>	
+</PreferenceScreen>

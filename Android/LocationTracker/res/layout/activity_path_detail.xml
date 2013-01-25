@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" 
+        android:background="@color/color_titlebar"
+        android:padding="5dp">
+       <TextView
+           android:id="@+id/name"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="left"
+           android:text="@string/name"
+           android:textColor="@color/color_title"           
+           android:textSize="18sp"  />
+       <TextView 
+           android:id="@+id/phone_num"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white_color"
+           android:textSize="15sp"/>
+    </LinearLayout>
+     <Button 
+	    android:id="@+id/confirm_button"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/confirm"
+	    android:visibility="visible"/>
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/confirm_button"
+        android:layout_below="@id/header_ly" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen android:title="@string/chart_category" />
+
+    <Preference
+        android:key="@string/realtime_chart"
+        android:title="@string/realtime_chart" />
+    <Preference
+        android:key="@string/album_top20"
+        android:title="@string/album_top20" />
+    <Preference
+        android:key="@string/recent_music"
+        android:title="@string/recent_music" />
+    <Preference
+        android:key="@string/recent_album"
+        android:title="@string/recent_album" />
+
+</PreferenceScreen>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <color name="color_sub_titlebar">#cccccc</color>
+
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color> <!-- rgb 102,102,102 -->
+    <color name="orange">#ff9933</color>
+    
+	<color name="default_background_color">#ffeeebe4</color>
+	<color name="ver_background_color">#e0e3e7</color>
+	<color name="ver_background_color_bottom">#22000000</color>
+	<color name="default_text_color">#ff000000</color>
+	<color name="title_text_color">#323232</color>
+	<color name="person_text_color">#757982</color>
+	<color name="position_text_color">#203f9a</color>
+	<color name="search_text_color">#a0a0a0</color>
+	<color name="setting_time_text_color">#405794</color>
+	<color name="black_color">#ff000000</color>
+	<color name="white_color">#ffffffff</color>
+	<color name="orenge_color">#f18200</color>	
+	<color name="blue_green_color">#45808b</color>
+	<color name="light_red">#e35744</color>
+	
+	<!-- Setting Color -->
+	<color name="setting_text_color">#484848</color>
+	<color name="setting_notice_help_title">#323232</color>
+	<color name="setting_notice_summary">#8f8d89</color>
+	<color name="setting_notice_help_content_text_color">#848484</color>	
+	<color name="setting_update_text">#323232</color>
+	<color name="setting_notifi_text">#323232</color>
+	<color name="setting_notifi_summary_text">#323232</color>
+	<color name="setting_message_font_text">#45808b</color>
+	
+	<!-- 리스트 백그라운드 칼라 -->
+	<color name="list_even_background_color">#f2f4f9</color>
+	<color name="list_odd_background_color">#ffffffff</color>
+	<color name="list_current_talk_checked_background_color">#33f7941d</color>	
+	<color name="list_color">#eeebe4</color>
+	<color name="list_select_color">#c3d7db</color>
+	<color name="list_line_color">#787878</color>
+	<color name="font_color_sub_text">#ff757982</color>	
+	<color name="font_color_blue">#ff405794</color>
+	<color name="font_color_gray">#787878</color>
+	<color name="font_color_orange">#f7941d</color>
+    <color name="textColorIconOverlay">#fff</color>
+    <color name="textColorIconOverlayShadow">#000</color>
+    <color name="sect_secondary">#4fff</color>
+    <color name="quickcontact_disambig">#f2f2f2</color>
+    <color name="quickcontact_disambig_divider">#afafaf</color>
+    <color name="edit_divider">#ff666666</color>
+    <color name="background_secondary">#ff202020</color>
+    <color name="pinned_header_background">#ff202020</color>
+    <color name="translucent_search_background">#cc000000</color>    
+    <color name="dim_search_background">#77000000</color>        
+    <color name="color_title">#ffffff</color>
+	<color name="color_titlebar">#555555</color>
+	
+	<color name="color_tab_titlebar">#9a4f17</color>
+	<color name="color_tab_sub_titlebar">#cccccc</color>
+	
+	
+        
+	<color name="flatRadio_click">#e3402d</color>
+    <color name="flatRadio_def">#b5b5b5</color>
+    
+   
+</resources>

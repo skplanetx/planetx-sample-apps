@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="6dip"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!-- 	    보낸 메시지 상세	  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/content"
+        android:layout_weight="1"
+         >
+		<!-- 	    타이틀	  -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/send_msg_title"
+			android:textSize="18sp"/>
+		
+		<!-- 	    출발지	  -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/send_msg_starting_point"
+			android:textSize="18sp"/>
+		<TextView
+		    android:id="@+id/starting_point"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="6dip"
+			android:textSize="18sp"
+			android:text=""/>
+		
+		<!-- 	    목적지	  -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/send_msg_destination"
+			android:textSize="18sp"/>
+		<TextView
+		    android:id="@+id/destination"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="6dip"
+			android:textSize="18sp"
+			android:text=""/>
+		
+		<!-- 	    예상 소요 시간	  -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/send_msg_ETE"
+			android:textSize="18sp"/>
+		<TextView
+		    android:id="@+id/estimated_time_en_route"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="6dip"
+			android:textSize="18sp"
+			android:text=""/>
+		
+		<!-- 	    도착 정보	  -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/send_msg_messaging"
+			android:textSize="18sp"/>
+		<TextView
+		    android:id="@+id/messaging"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="6dip"
+			android:textSize="18sp"
+			android:text=""/>
+		
+		<!-- 	    시간	  -->
+		<TextView
+		    android:id="@+id/date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="6dip"
+			android:textSize="18sp"
+			android:text=""/>
+    </LinearLayout>
+    <CheckBox
+        android:layout_gravity="center_vertical"
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<Preference
+	    android:key="@string/shortcuts"
+	    android:layout="@layout/activity_shortcuts"/> 
+	<Preference
+	    android:key="@string/go_home"
+	    android:title="@string/go_home"
+	    android:summary="@string/home_set_terms"/> 
+    <Preference
+        android:key="@string/go_company"
+        android:title="@string/go_company" 
+        android:summary="@string/company_set_terms"/>
+
+</PreferenceScreen>

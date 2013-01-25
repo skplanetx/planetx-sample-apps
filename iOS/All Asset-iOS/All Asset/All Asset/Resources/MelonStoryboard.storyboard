@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VUl-vG-Uxe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Melon New Album View Controller - New Album-->
+        <scene sceneID="0Bu-3n-R54">
+            <objects>
+                <viewController title="New Album" id="Uk3-9e-zLj" customClass="MelonNewAlbumViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="svM-jf-zVl">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QMd-GN-NeP">
+                                <rect key="frame" x="0.0" y="44" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Uk3-9e-zLj" id="TqR-mU-S7i"/>
+                                    <outlet property="delegate" destination="Uk3-9e-zLj" id="DAa-de-Yt5"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="tAw-U4-NpX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Melon" id="ov9-ny-LrH">
+                                        <barButtonItem key="leftBarButtonItem" title="홈" id="Ny2-gs-Ac3">
+                                            <connections>
+                                                <action selector="pressedHomeButtonItem:" destination="Uk3-9e-zLj" id="Di8-vt-fEL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="최신앨범" id="ZQ3-2n-T8G"/>
+                    <connections>
+                        <outlet property="itemTableView" destination="QMd-GN-NeP" id="gH6-5v-TXB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cY9-oO-Ghx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="266"/>
+        </scene>
+        <!--Melon New Song View Controller - New Song-->
+        <scene sceneID="mkR-OJ-YZw">
+            <objects>
+                <viewController title="New Song" id="H7N-Sl-MnP" customClass="MelonNewSongViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ms8-Qg-Bdz">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vWB-vv-YbX">
+                                <rect key="frame" x="0.0" y="44" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="H7N-Sl-MnP" id="vyd-Fn-TEF"/>
+                                    <outlet property="delegate" destination="H7N-Sl-MnP" id="TQp-wj-P9d"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="XCJ-qe-e7k">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Melon" id="aQu-Ov-w8R">
+                                        <barButtonItem key="leftBarButtonItem" title="홈" id="CPX-bN-LGE">
+                                            <connections>
+                                                <action selector="pressedHomeButtonItem:" destination="H7N-Sl-MnP" id="y3b-Hz-FhO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="최신곡" id="2hb-je-OmY"/>
+                    <connections>
+                        <outlet property="itemTableView" destination="vWB-vv-YbX" id="ZZu-yj-lZO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FD-eh-hwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-386"/>
+        </scene>
+        <!--Melon Top Chart View Controller - Top Chart-->
+        <scene sceneID="qNB-QE-I4H">
+            <objects>
+                <viewController title="Top Chart" id="fdv-Ba-IfS" customClass="MelonTopChartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0jQ-tS-6gp">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VQ5-0M-sxB">
+                                <rect key="frame" x="0.0" y="74" width="320" height="425"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fdv-Ba-IfS" id="C8B-yV-Mwl"/>
+                                    <outlet property="delegate" destination="fdv-Ba-IfS" id="bwy-6s-Mjq"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="BaS-cb-cY5">
+                                <rect key="frame" x="0.0" y="44" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="실시간 차트"/>
+                                    <segment title="주간 TOP 100"/>
+                                    <segment title="앨범 TOP 20"/>
+                                </segments>
+                                <connections>
+                                    <action selector="pressedSegement:" destination="fdv-Ba-IfS" eventType="valueChanged" id="FZ6-Tn-m8h"/>
+                                </connections>
+                            </segmentedControl>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Aqg-NF-BK3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Melon" id="XzJ-Wk-bwr">
+                                        <barButtonItem key="leftBarButtonItem" title="홈" id="hed-Lf-nYw">
+                                            <connections>
+                                                <action selector="pressedHomeButtonItem:" destination="fdv-Ba-IfS" id="m3o-Qg-BS2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="음악차트" id="tUy-Sb-v3u"/>
+                    <connections>
+                        <outlet property="categorySegement" destination="BaS-cb-cY5" id="XoR-jN-2SL"/>
+                        <outlet property="itemTableView" destination="VQ5-0M-sxB" id="0Zl-ES-Afn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eB-vV-TVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="912"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="r54-Vt-eZh">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="VUl-vG-Uxe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aPW-qi-V4o"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="XIc-sR-uZc">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="H7N-Sl-MnP" kind="relationship" relationship="viewControllers" id="MGq-hP-Wco"/>
+                        <segue destination="Uk3-9e-zLj" kind="relationship" relationship="viewControllers" id="pHs-YQ-FwX"/>
+                        <segue destination="fdv-Ba-IfS" kind="relationship" relationship="viewControllers" id="Oha-26-wfP"/>
+                        <segue destination="6ZV-7M-Y0F" kind="relationship" relationship="viewControllers" id="v0f-Vd-J9A"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crM-DH-hdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="-20"/>
+        </scene>
+        <!--Melon Search View Controller - Search-->
+        <scene sceneID="qiL-aw-5N4">
+            <objects>
+                <viewController title="Search" id="6ZV-7M-Y0F" customClass="MelonSearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQc-Qw-o6s">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="afd-hx-zDM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Melon" id="J8n-ps-qhA">
+                                        <barButtonItem key="leftBarButtonItem" title="홈" id="6zZ-KQ-W2g">
+                                            <connections>
+                                                <action selector="pressedHomeButtonItem:" destination="6ZV-7M-Y0F" id="UNC-GH-maP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" barStyle="blackOpaque" placeholder="검색어를 입력하세요." id="3Sd-Sj-zTO">
+                                <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6ZV-7M-Y0F" id="JeX-bS-5Pc"/>
+                                </connections>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="N3R-1I-rrM">
+                                <rect key="frame" x="0.0" y="88" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="곡"/>
+                                    <segment title="앨범"/>
+                                    <segment title="아티스트"/>
+                                </segments>
+                                <connections>
+                                    <action selector="pressedSegement:" destination="6ZV-7M-Y0F" eventType="valueChanged" id="JNb-Dv-cjs"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b3d-fC-Zsc">
+                                <rect key="frame" x="0.0" y="119" width="320" height="380"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6ZV-7M-Y0F" id="Q8L-XP-b0L"/>
+                                    <outlet property="delegate" destination="6ZV-7M-Y0F" id="RL9-Xm-w6f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="검색" id="OuF-fz-PUi"/>
+                    <connections>
+                        <outlet property="categorySegement" destination="N3R-1I-rrM" id="fYp-D2-r8E"/>
+                        <outlet property="itemSearchBar" destination="3Sd-Sj-zTO" id="Zrt-5W-ORw"/>
+                        <outlet property="itemTableView" destination="b3d-fC-Zsc" id="QM3-SD-LYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaD-ob-bAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="1560"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="MelonNewAlbumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MelonNewAlbumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pressedHomeButtonItem:"/>
+                <relationship kind="outlet" name="itemTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MelonNewSongViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MelonNewSongViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pressedHomeButtonItem:"/>
+                <relationship kind="outlet" name="itemTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MelonSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MelonSearchViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pressedHomeButtonItem:"/>
+                <relationship kind="action" name="pressedSegement:"/>
+                <relationship kind="outlet" name="categorySegement" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="itemSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="itemTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MelonTopChartViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MelonTopChartViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pressedHomeButtonItem:"/>
+                <relationship kind="action" name="pressedSegement:"/>
+                <relationship kind="outlet" name="categorySegement" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="itemTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

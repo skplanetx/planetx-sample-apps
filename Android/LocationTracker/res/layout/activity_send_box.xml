@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="40dp"
+           android:layout_gravity="center_vertical|center_horizontal"
+           android:gravity="center"
+           android:text="@string/message_send"
+           android:textColor="@color/color_title"
+           android:background="@color/color_titlebar"
+           android:textSize="18sp"/>   
+
+        <RadioGroup
+            android:id="@+id/address_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/myAddress_rb"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/myAddress_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="@style/FlatRadioButton"
+                android:text="@string/send_message" />
+
+            <RadioButton
+                android:id="@+id/nate_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="@style/FlatRadioButton"
+                android:text="@string/send_tag" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_ly" />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_data" />
+   	<Button
+   	 	android:id="@+id/confirm_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>

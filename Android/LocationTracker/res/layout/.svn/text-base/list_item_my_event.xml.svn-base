@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">        
+        <TextView
+	        android:id="@+id/date"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:text="today"
+	        android:paddingLeft="10dp"
+	        android:background="@color/font_color_orange"
+	        android:textColor="@color/black_color"
+	        android:textSize="18sp"/> 
+     </LinearLayout>
+     <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp" >    
+	    <TextView
+	        android:id="@+id/summary"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="주간 회의"
+	        android:textColor="@color/black_color"
+	        android:textSize="18sp"
+	        android:singleLine="true"
+	        android:ellipsize="end" />
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" > 
+	    <TextView
+	        android:singleLine="true"
+	        android:layout_weight="1"
+	  	    android:id="@+id/dateTime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="오후 2시~~ "
+	        android:textColor="@color/black_color"
+	        android:textSize="15sp"
+	        android:ellipsize="end" />
+	    <TextView
+	  	    android:id="@+id/location"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="본사 건물"
+	        android:textSize="15sp"
+	        android:textColor="@color/black_color"
+	        android:layout_marginLeft="10dp"
+	        android:ellipsize="end" />
+	    </LinearLayout>        
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/friend_list"
+        android:title="@string/friend_list"/>
+    <item
+        android:id="@+id/my_photo_album"
+        android:title="@string/my_photo_album"/>
+    <item
+        android:id="@+id/my_guest_book"
+        android:title="@string/my_guest_book"/>
+
+</menu>

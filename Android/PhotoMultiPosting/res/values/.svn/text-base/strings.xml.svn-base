@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">Photo Multi "\n"Posting</string>
+    <string name="app_top_title">Photo Multi Posting</string>
+    <string name="menu_settings">settings</string>
+    <string name="gallery">My Album</string>
+    <string name="list_ctn">개의 항목</string>
+    <string name="previous">이전</string>
+    <string name="home">Home</string>
+
+    <!-- SNS관련String -->
+    <string name="auto">자동</string>
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="account_manage">계정관리</string>
+    <string name="account_set">계정등록</string>
+    <string name="account_setting">계정설정</string>
+    <string name="tcloud">T Cloud</string>
+    <string name="cyworld">Cyworld</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="sns_setting_info">"SNS 로그인을 하시면 서비스를 이용하실 수 있습니다. 가입한 회원정보를 입력해주세요."</string>
+
+    <!-- 포스팅관련String -->
+    <string name="myposting">MY포스팅</string>
+    <string name="posting">포스팅</string>
+    <string name="edit_hint">내용을 입력하세요.</string>
+    <string name="input_count">%1$s/140</string>
+    <string name="send">보내기</string>
+    <string name="comment_with_count">댓글(%1$s)</string>
+    <string name="exceed_char">140자를 초과하여 작성 할 수 없습니다.</string>
+    <string name="success_posting">포스팅되었습니다.</string>
+
+    <!-- Date 변환 -->
+    <string name="year">년</string>
+    <string name="month">월</string>
+    <string name="day">일</string>
+    <string name="hour">시간</string>
+    <string name="minute">분</string>
+    <string name="second">초</string>
+
+    <!-- ETC. -->
+    <string name="loading">Loading...</string>
+    <string name="no_timeinfo">날짜정보 없음</string>
+    <string name="empty_data">데이터가 존재하지 않습니다</string>
+    <string name="auth_error">인증이 실패 하였습니다.</string>
+    <string name="not_seleted_sns">SNS가 선택되지 않았습니다.</string>
+    <string name="not_exist_sns">연결된 SNS가 존재하지 않습니다.</string>
+    <string name="invalid_image_facebook">Facebook에 포스팅할 수 있는 이미지 최대 해상도는 960px 입니다.</string>
+    <string name="invalid_image_cyworld_size">Cyworld에 포스팅할 수 있는 이미지파일 사이즈는 최대 2Mbyte 입니다.</string>
+    <string name="invalid_image_twitter_size">Twitter에 포스팅할 수 있는 이미지파일 사이즈는 최대 3Mbyte 입니다.</string>
+    <string name="invalid_image_cyworld_extention">Cyworld에 포스팅될 수 있는 이미지 형식은 jpg, png, gif, jpeg 입니다.</string>
+    <string name="invalid_image_twitter_extention">Twitter에 포스팅될 수 있는 이미지 형식은 jpg, png, gif 입니다.</string>
+	<string name="not_exist_content">[글 정보없음]</string>
+    
+</resources>

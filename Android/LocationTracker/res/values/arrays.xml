@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="message_time_tick">
+        <item>2분 마다</item>
+        <item>5분 마다</item>
+        <item>10분 마다</item>
+        <item>30분 마다</item>
+        <item>해제</item>
+    </string-array>
+    <string-array name="message_time_tick_values">
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="arrived_noti_way_setting">
+        <item>진동과 소리</item>
+        <item>소리만</item>
+        <item>진동만</item>
+        <item>해제</item>
+    </string-array>
+    <string-array name="start_location_array">
+        <item>현재위치</item>
+        <item>즐겨찾기에서 선택</item>
+<!--         <item>지도에서 선택</item> -->
+    </string-array>
+    <string-array name="end_location_array">
+        <item>즐겨찾기에서 선택</item>
+        <item>일정에서 선택</item>
+<!--         <item>지도에서 선택</item> -->
+    </string-array>
+    <string-array name="nfc_choose_contact_array">
+        <item>지정 연락처로 보내기</item>
+        <item>주소록에서 선택</item>
+    </string-array>
+
+</resources>

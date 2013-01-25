@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VUl-vG-Uxe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Cyworld Friend List View Controller - Friend View-->
+        <scene sceneID="0Bu-3n-R54">
+            <objects>
+                <viewController title="Friend View" id="Uk3-9e-zLj" customClass="CyworldFriendListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="svM-jf-zVl">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="tAw-U4-NpX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Cyworld" id="ov9-ny-LrH">
+                                        <barButtonItem key="leftBarButtonItem" title="홈" id="Ny2-gs-Ac3">
+                                            <connections>
+                                                <action selector="pressedHomeButtonItem:" destination="Uk3-9e-zLj" id="Di8-vt-fEL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="04L-Wb-tVE">
+                                <rect key="frame" x="0.0" y="115" width="320" height="384"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Uk3-9e-zLj" id="QWd-l2-WNc"/>
+                                    <outlet property="delegate" destination="Uk3-9e-zLj" id="yfe-Wy-f4q"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="일촌 목록" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TF9-WR-d3x">
+                                <rect key="frame" x="20" y="44" width="280" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" barStyle="blackOpaque" placeholder="이름을 검색해주세요." id="D8B-o9-N0j">
+                                <rect key="frame" x="0.0" y="71" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Uk3-9e-zLj" id="aZx-eT-F2z"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="일촌목록" id="ZQ3-2n-T8G"/>
+                    <connections>
+                        <outlet property="buddyListTableView" destination="04L-Wb-tVE" id="1h4-7N-E4K"/>
+                        <outlet property="buddySearchBar" destination="D8B-o9-N0j" id="EkC-Uu-Zin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cY9-oO-Ghx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-172"/>
+        </scene>
+        <!--Cyworld Photo Album View Controller - Photo Album-->
+        <scene sceneID="mkR-OJ-YZw">
+            <objects>
+                <viewController title="Photo Album" id="H7N-Sl-MnP" customClass="CyworldPhotoAlbumViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ms8-Qg-Bdz">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="XCJ-qe-e7k">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Cyworld" id="aQu-Ov-w8R">
+                                        <barButtonItem key="leftBarButtonItem" title="홈" id="CPX-bN-LGE">
+                                            <connections>
+                                                <action selector="pressedHomeButtonItem:" destination="H7N-Sl-MnP" id="y3b-Hz-FhO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mTX-7T-okE">
+                                <rect key="frame" x="0.0" y="82" width="320" height="417"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="H7N-Sl-MnP" id="jbW-MM-Mfm"/>
+                                    <outlet property="delegate" destination="H7N-Sl-MnP" id="Qm4-dY-jAB"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="pNY-25-PAs">
+                                <rect key="frame" x="20" y="44" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="showPicker:" destination="H7N-Sl-MnP" eventType="touchDown" id="eVp-VB-JU0"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="arrow.png" id="KBX-BU-SvC">
+                                <rect key="frame" x="265" y="48" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="사진첩" id="2hb-je-OmY"/>
+                    <connections>
+                        <outlet property="folderTextField" destination="pNY-25-PAs" id="goh-Cc-fxK"/>
+                        <outlet property="itemListTableView" destination="mTX-7T-okE" id="oVo-1G-48v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FD-eh-hwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="486"/>
+        </scene>
+        <!--Cyworld Guest Book View Controller - Guest Book-->
+        <scene sceneID="qNB-QE-I4H">
+            <objects>
+                <viewController title="Guest Book" id="fdv-Ba-IfS" customClass="CyworldGuestBookViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0jQ-tS-6gp">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VQ5-0M-sxB">
+                                <rect key="frame" x="0.0" y="44" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fdv-Ba-IfS" id="CWH-A3-Vdm"/>
+                                    <outlet property="delegate" destination="fdv-Ba-IfS" id="La8-8E-fj0"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Aqg-NF-BK3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Cyworld" id="XzJ-Wk-bwr">
+                                        <barButtonItem key="leftBarButtonItem" title="홈" id="hed-Lf-nYw">
+                                            <connections>
+                                                <action selector="pressedHomeButtonItem:" destination="fdv-Ba-IfS" id="m3o-Qg-BS2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="방명록" id="tUy-Sb-v3u"/>
+                    <connections>
+                        <outlet property="itemTableView" destination="VQ5-0M-sxB" id="qD6-eL-hiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eB-vV-TVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="1140"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="r54-Vt-eZh">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="VUl-vG-Uxe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aPW-qi-V4o"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="XIc-sR-uZc">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Uk3-9e-zLj" kind="relationship" relationship="viewControllers" id="XNu-Uq-42P"/>
+                        <segue destination="H7N-Sl-MnP" kind="relationship" relationship="viewControllers" id="oPY-XI-JqH"/>
+                        <segue destination="fdv-Ba-IfS" kind="relationship" relationship="viewControllers" id="d5K-7y-vmK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crM-DH-hdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-498" y="486"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.png" width="24" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_titlebar"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/home_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/home" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/posting"
+                android:textColor="@color/color_title"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/account_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/account_manage" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/posting_check_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contents_ly"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/all_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/posting_all_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/all_icon_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/all" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fb_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/posting_fb_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/fb_icon_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/facebook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tw_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/posting_tw_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/tw_icon_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/twitter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cy_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/posting_cy_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/cy_icon_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/cyworld" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contents_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/posting_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:gravity="top|left"
+            android:hint="@string/edit_hint" />
+
+        <TextView
+            android:id="@+id/input_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/input_count" />
+
+        <Button
+            android:id="@+id/send_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/send" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/posting_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/posting_check_ly"
+        android:layout_below="@id/header_ly"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

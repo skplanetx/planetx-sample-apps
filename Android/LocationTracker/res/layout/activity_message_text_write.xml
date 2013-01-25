@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="40dp"
+           android:layout_gravity="center_vertical|center_horizontal"
+           android:gravity="center"
+           android:text="@string/message_text_setting"
+           android:textColor="@color/color_title"
+           android:background="@color/color_titlebar"
+           android:textSize="18sp"  />
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/confirm_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm" />
+
+    <EditText
+        android:layout_below="@id/title_tv"
+        android:layout_above="@id/confirm_bt"
+        android:id="@+id/message_et"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/input_message" />
+
+</RelativeLayout>

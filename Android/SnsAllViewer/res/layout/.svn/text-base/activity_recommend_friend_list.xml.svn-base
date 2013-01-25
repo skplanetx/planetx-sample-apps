@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@color/color_titlebar"
+            android:gravity="center"
+            android:text="@string/friends_recommend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/list_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_ly"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <RadioButton
+            android:id="@+id/friends_list_rb"
+            style="@style/FlatRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/friends_list"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/recommend_list_rb"
+            style="@style/FlatRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/friends_recommend"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/list_rg" />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_ly"
+        android:gravity="center"
+        android:text="@string/empty_data" />
+
+</RelativeLayout>

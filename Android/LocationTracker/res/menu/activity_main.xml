@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--     <item android:id="@+id/home" -->
+<!--         android:title="@string/home"/> -->
+    <item android:id="@+id/phone_address"
+        android:title="@string/add_address"/>
+    <item android:id="@+id/storage_box"
+        android:title="@string/storage_box"/>
+    <item android:id="@+id/setting"
+        android:title="@string/setting"/>  
+    <item android:id="@+id/stop_sending_msg"
+        android:title="@string/stop_sending_msg"/>     
+</menu>

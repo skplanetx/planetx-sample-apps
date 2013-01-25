@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="40dp"
+           android:layout_gravity="center_vertical|center_horizontal"
+           android:gravity="center"
+           android:text="@string/favorite_search"
+           android:textColor="@color/color_title"
+           android:background="@color/color_titlebar"
+           android:textSize="18sp"  />
+<!--        <TextView  -->
+<!--            android:id="@+id/favorite_count" -->
+<!--            android:layout_width="fill_parent" -->
+<!--            android:layout_height="wrap_content" -->
+<!--            android:text="@string/favorite_search" -->
+<!--            android:background="@color/blue_green_color"/> -->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_ly"
+        android:layout_below="@id/header_ly" />        
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_favorite" />
+    <LinearLayout
+        	android:id="@+id/bottom_button_bar"
+	        android:layout_alignParentBottom="true"
+	        android:layout_gravity="bottom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:visibility="gone" >      
+	         	<Button
+	         	     android:id="@+id/contact_setting"
+		             android:layout_width="fill_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_weight="1"
+		             android:text="@string/change_name"/>
+	            <Button
+	                android:id="@+id/favorite"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/delete"/>
+	            <Button
+	                android:id="@+id/path_detail"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/all_delete"/>
+	</LinearLayout>   
+   	<Button
+   	 	android:id="@+id/confirm_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>

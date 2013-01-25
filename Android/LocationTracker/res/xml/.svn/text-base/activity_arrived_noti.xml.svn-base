@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<Preference
+	    android:key="@string/favorite_management"
+	    android:layout="@layout/arrived_noti_setting_title_bar"/> 
+
+    <ListPreference
+        android:entries="@array/arrived_noti_way_setting"
+        android:entryValues="@array/arrived_noti_way_setting"
+        android:key="@string/arrived_noti_way_setting"
+        android:title="@string/arrived_noti_way_setting" />
+    <ListPreference
+        android:entries="@array/message_time_tick"
+        android:entryValues="@array/message_time_tick"
+        android:key="@string/arrived_noti_tick_setting"
+        android:title="@string/arrived_noti_tick_setting" />
+	<RingtonePreference
+		android:name="Ringtone Preference"
+		android:ringtoneType="notification"
+		android:showSilent="false"
+		android:title="@string/arrived_noti_ring_setting" 
+		android:defaultValue="content://settings/system/notification_sound" 
+		android:key="sound" />
+
+</PreferenceScreen>

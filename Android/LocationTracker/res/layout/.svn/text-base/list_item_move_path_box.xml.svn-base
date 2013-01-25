@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="6dip">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical">
+		    <TextView
+		        android:id="@+id/path"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/black_color"
+		        android:text="서울 특별시 강남구 대성 학원" 
+		        android:textSize="18sp"
+		        android:singleLine="true"
+		        android:ellipsize="end"/> 
+			<TextView
+		  	    android:id="@+id/date"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/black_color"
+		        android:text="2012.10.12 Fri 오후 03:00"
+		        android:textSize="15sp"
+		        />  
+   
+	        </LinearLayout>
+	        <CheckBox
+	            android:id="@+id/check_box"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+ 
+ </LinearLayout>

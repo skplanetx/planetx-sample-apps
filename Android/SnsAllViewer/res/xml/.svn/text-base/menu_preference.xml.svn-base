@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- SNS 보기 -->
+    <PreferenceCategory android:title="@string/show_sns">
+        <Preference
+            android:key="@string/key_all_sns"
+            android:title="@string/show_all_sns" />
+    </PreferenceCategory>
+    <!-- 친구 -->
+    <PreferenceCategory android:title="@string/friends">
+        <Preference 
+            android:key="@string/key_friend_list"
+            android:title="@string/friendsList" />
+        <Preference
+            android:key="@string/key_upload_phonebook"
+            android:title="@string/upload_phonebook" />
+    </PreferenceCategory>
+    <!-- 계정 -->
+    <PreferenceCategory android:title="@string/account">
+        <Preference
+            android:key="@string/key_account"
+            android:title="@string/account_setting" />
+    </PreferenceCategory>
+</PreferenceScreen>

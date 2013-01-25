@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="setting_activity_top_title"
+    android:title="" >
+
+    <!-- NateOn -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/nate_on" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/nate_main_key"
+            android:title="@string/main_expose" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/nate_live_key"
+            android:summary="@string/msg_alarm"
+            android:title="@string/my_planet_live_expose" />
+    </PreferenceCategory>
+    <!-- Cyworld -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/cyworld" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/cy_main_key"
+            android:title="@string/main_expose" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/cy_live_key"
+            android:title="@string/my_planet_live_expose" />
+        <ListPreference
+            android:key="@string/cyworld_settings"
+            android:title="@string/settings" 
+            android:defaultValue="화면에 표시될 방명록 수 : 5"
+			android:entries="@array/cyworld_tems"
+			android:entryValues="@array/cyworld_tems" />
+    </PreferenceCategory>
+    <!-- MELON -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/melon" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/melon_main_key"
+            android:title="@string/main_expose" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/melon_live_key"
+            android:title="@string/my_planet_live_expose" />
+    </PreferenceCategory>
+    <!-- 11st -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/eleven_st" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/eleven_main_key"
+            android:title="@string/main_expose" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/eleven_live_key"
+            android:title="@string/my_planet_live_expose" />
+
+        <Preference
+            android:key="@string/eleven_settings"
+            android:title="@string/settings" />
+    </PreferenceCategory>
+    <!-- TMap -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/tmap" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/tmap_main_key"
+            android:title="@string/main_expose" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/tmap_live_key"
+            android:title="@string/my_planet_live_expose" />
+
+        <Preference
+            android:key="@string/tmap_settings"
+            android:title="@string/settings" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

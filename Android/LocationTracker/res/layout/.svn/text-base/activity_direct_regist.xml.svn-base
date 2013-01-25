@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <TextView
+         android:id="@+id/title_bar"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:layout_gravity="center_vertical|center_horizontal"
+         android:gravity="center"
+         android:text="@string/direct_regist"
+         android:textColor="@color/color_title"
+         android:background="@color/color_titlebar"
+         android:textSize="18sp"/>
+     
+    <TextView
+        android:layout_below="@id/title_bar"
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name" />
+
+    <EditText
+        android:layout_below="@id/name_tv"
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name" />
+
+    <TextView
+        android:layout_below="@id/name_et"
+        android:id="@+id/phoneNumber_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number" />
+
+    <EditText
+        android:layout_below="@id/phoneNumber_tv"
+        android:id="@+id/phoneNumber_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number" />
+
+    <Button
+        android:id="@+id/confirm_bt"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm" />
+
+</RelativeLayout>

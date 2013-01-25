@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- 기본정보 -->
+    <string name="app_name">Melon Info "\n"Sharing</string>
+    <string name="app_top_title">Melon Info Sharing</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- 메인메뉴String -->
+    <string name="music_chart">음악차트</string>
+    <string name="play_list">내 플레이리스트</string>
+    <string name="realtime_chart">실시간 차트</string>
+    <string name="album_top20">앨범 TOP20 </string>
+    <string name="recent_music">최신곡</string>
+    <string name="recent_album">최신앨범</string>
+    <string name="melon_dj">멜론 DJ</string>
+    <string name="recommend_dj">DJ추천</string>
+    <string name="melon_dj_category">멜론 DJ 카테고리</string>
+    <string name="sd_unmount">SD 카드 혹은 내장 메모리를 찾을 수 없습니다.</string>
+
+    <!-- 상세 및 공유 String -->
+    <string name="share">공유</string>
+    <string name="melon_share">멜론공유</string>
+    <string name="enter_contents">내용을 입력해주세요.</string>
+    <string name="content_hint">내용입력</string>
+    <string name="exceed_char">140자를 초과하여 작성 할 수 없습니다.</string>
+    <string name="input_count">%1$s/140</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="posting_success">글을 공유하였습니다.</string>
+    <string name="melon_music_info">Melon에서보기</string>
+    <string name="youtube">Youtube에서보기</string>
+    <string name="play">음악듣기</string>
+    <string name="photo">Youtube</string>
+
+    <!-- SNS계정관련String -->
+    <string name="loading">로딩중...</string>
+    <string name="account_set_msg">연결된 SNS계정이 존재하지 않습니다.</string>
+    <string name="account_check_msg">SNS를 체크해주세요.</string>
+    <string name="auto_login">자동</string>
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="id">아이디</string>
+    <string name="pwd">패스워드</string>
+    <string name="id_message">아이디를 입력하세요</string>
+    <string name="pwd_message">패스워드를 입력하세요</string>
+    <string name="facebook">Facebook</string>
+    <string name="cyworld">Cyworld</string>
+    <string name="twitter">Twitter</string>
+    <string name="accout_register">계정등록</string>
+    <string name="sns_setting_info">"SNS 로그인을 하시면 서비스를 이용하실 수 있습니다. 가입한 회원정보를 입력해주세요."</string>
+
+    <!-- 검색페이지String -->
+    <string name="search_category">검색조건선택</string>
+    <string name="format_warn_msg">지원하지 않는 파일 형식입니다.</string>
+    <string name="search">Melon 검색</string>
+    <string name="search_hint">검색어를 입력하세요.</string>
+
+    <!-- MENU -->
+    <string name="finish">종료하기</string>
+    <string name="home">"  홈  "</string>
+    <string name="back">뒤로</string>
+    <string name="account_setting">계정설정</string>
+
+    <!-- ETC. -->
+    <string name="chart_category">Melon Chart</string>
+    <string name="empty_data">데이터가 존재하지 않습니다.</string>
+    <string name="auth_error">인증이 실패 하였습니다.</string>
+    <string name="account_manage">계정관리</string>
+    <string name="want_to_quit">음악공유서비스를 종료하시겠습니까?</string>
+
+</resources>

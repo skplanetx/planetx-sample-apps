@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_items_11st_search">
+        <item>@string/sort_code_cp</item>
+        <item>@string/sort_code_a</item>
+        <item>@string/sort_code_g</item>
+        <item>@string/sort_code_i</item>
+        <item>@string/sort_code_l</item>
+        <item>@string/sort_code_h</item>
+        <item>@string/sort_code_n</item>
+    </string-array>
+    
+	<string-array name="cyworld_tems">
+        <item>@string/item_5</item>
+        <item>@string/item_10</item>
+        <item>@string/item_15</item>
+    </string-array>
+    
+
+</resources>

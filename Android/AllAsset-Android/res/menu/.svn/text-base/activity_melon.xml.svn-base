@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/current_music"
+        android:title="@string/current_music"/>
+    <item
+        android:id="@+id/current_album"
+        android:title="@string/current_album"/>
+    <item
+        android:id="@+id/music_chart"
+        android:title="@string/music_chart"/>
+    <item
+        android:id="@+id/music_search"
+        android:title="@string/search"/>
+
+</menu>

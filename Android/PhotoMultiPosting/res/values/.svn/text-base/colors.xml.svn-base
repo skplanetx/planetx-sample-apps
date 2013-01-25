@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_title">#ffffff</color>
+    <color name="color_titlebar">#555555</color>
+    <color name="color_sub_titlebar">#cccccc</color>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color>
+    <color name="orange">#ff9933</color>
+    
+    <color name="light_red">#e35744</color>
+
+	<color name="flatRadio_click">#e3402d</color>
+    <color name="flatRadio_def">#b5b5b5</color>
+    
+    <color name="light_blue">#4898c7</color>
+    
+</resources>

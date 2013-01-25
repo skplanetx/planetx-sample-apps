@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/no_image" />
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_iv" />
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_toRightOf="@id/image_iv" />
+
+    <TextView
+        android:id="@+id/sale_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/price_tv"
+        android:textColor="@color/light_red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/seller_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_tv"
+        android:layout_toRightOf="@id/image_iv" />
+
+    <TextView
+        android:id="@+id/nick_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_tv"
+        android:layout_toRightOf="@id/seller_tv" />
+
+    <TextView
+        android:id="@+id/satisfy_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seller_tv"
+        android:layout_toRightOf="@id/image_iv" />
+
+    <TextView
+        android:id="@+id/review_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seller_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/satisfy_tv" />
+
+    <TextView
+        android:id="@+id/delivery_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/satisfy_tv"
+        android:layout_toRightOf="@id/image_iv"
+        android:textColor="@color/solid_blue" />
+
+</RelativeLayout>

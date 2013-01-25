@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+   	<Preference
+	    android:key="@string/favorite_management"
+	    android:layout="@layout/message_setting_title_bar"/> 
+
+    <ListPreference        
+        android:entries="@array/message_time_tick"
+        android:entryValues="@array/message_time_tick_values"
+        android:key="@string/message_send_tick"
+        android:title="@string/message_send_tick"
+        android:defaultValue="120000"/>
+
+    <Preference
+        android:key="@string/message_text_setting"
+        android:title="@string/message_text_setting" />
+<!--     <Preference -->
+<!--         android:key="@string/arrived_noti_setting" -->
+<!--         android:title="@string/arrived_noti_setting" /> -->
+
+<!--     <CheckBoxPreference -->
+<!--         android:key="@string/after_arrived_path_save" -->
+<!--         android:title="@string/after_arrived_path_save" /> -->
+
+</PreferenceScreen>

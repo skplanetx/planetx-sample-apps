@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="search_category">
+        <item>곡검색</item>
+        <item>아티스트검색</item>
+        <item>앨범검색</item>
+    </string-array>
+
+</resources>

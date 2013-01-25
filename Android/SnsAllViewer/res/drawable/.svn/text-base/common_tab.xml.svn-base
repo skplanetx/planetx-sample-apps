@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/flatRadio_click" android:state_checked="true" android:state_pressed="true"/>
+    <!-- 선택되어져 있을때 -->
+    <item android:drawable="@color/flatRadio_click" android:state_checked="true"/>
+    <!-- 선택되지 않은 옵션이 눌러졌을때 -->
+    <item android:drawable="@color/flatRadio_def" android:state_checked="false" android:state_pressed="true"/>
+    <!-- 선택되지 않은것에 초점이 맞은경우 -->
+    <item android:drawable="@color/flatRadio_click" android:state_checked="false" android:state_focused="true" android:state_pressed="false"/>
+    <!-- 선택되지 않은 옵션의 기본상태 -->
+    <item android:drawable="@color/flatRadio_def" android:state_checked="false"/>
+
+</selector>

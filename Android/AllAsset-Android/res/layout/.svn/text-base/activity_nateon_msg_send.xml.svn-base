@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_titlebar"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/back_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/back" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/nate_on"
+                android:textColor="@color/color_title"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:id="@+id/sub_msg_header_ly"
+       	android:layout_width="match_parent"
+   	 	android:layout_height="wrap_content"
+   	 	android:visibility="gone"
+   	 	android:layout_below="@id/header_ly">
+	    <LinearLayout
+	        android:id="@+id/sub_header_ly"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/sub_msg_header_ly"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@color/color_sub_titlebar"
+	            android:paddingLeft="5dp"
+	            android:text="@string/msg_send" />
+	    </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/msg_des_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/sub_header_ly"
+	        android:layout_margin="20dp"
+	        android:text="@string/nate_msg_send" />
+	
+	    <Button
+	        android:id="@+id/send_bt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_margin="40dp"
+	        android:gravity="center"
+	        android:text="@string/send" />
+	
+	    <EditText
+	        android:id="@+id/msg_et"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@id/send_bt"
+	        android:layout_below="@id/msg_des_tv"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:gravity="top|left"
+	        android:imeOptions="actionDone" />
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/list_ly"
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/header_ly" 
+		android:paddingBottom="45dp">
+		<ListView
+	        android:id="@+id/android:list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        />
+	
+	    <TextView
+	        android:id="@+id/android:empty"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="@string/empty_data" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/msg_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/view_reply" />
+    
+</RelativeLayout>

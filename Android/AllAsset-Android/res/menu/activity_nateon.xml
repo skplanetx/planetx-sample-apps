@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/msg"
+        android:title="@string/msg"/>
+    <item
+        android:id="@+id/friend"
+        android:title="@string/friend"/>
+
+</menu>
