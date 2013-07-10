@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tcloud.sample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".TcloudOpenApiActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".WebViewActivity" 
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+        
+        <activity 
+            android:name=".FileBrowser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+            
+        <activity 
+            android:name=".MetaGroupActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+        
+        <activity 
+            android:name=".PhotoGroupActivity"
+            android:label="Photo Group"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".MusicGroupActivity"
+            android:label="Music Group"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".MovieGroupActivity"
+            android:label="Movie Group"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+        
+        <activity 
+            android:name=".DocumentGroupActivity"
+            android:label="Document Group"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".PhotoListActivity"
+            android:label="Photo List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".MusicListActivity"
+            android:label="Music List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".MovieListActivity"
+            android:label="Movie List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".DocumentListActivity"
+            android:label="Document List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".PhotoDetailActivity"
+            android:label="Document List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+        
+        <activity 
+            android:name=".PhotoViewActivity"
+            android:label="Document List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".MusicDetailActivity"
+            android:label="Document List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".MovieDetailActivity"
+            android:label="Document List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".DocumentDetailActivity"
+            android:label="Document List"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".FileDownloadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity 
+            android:name=".TcloudMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden" />
+
+        
+        </application>
+        
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

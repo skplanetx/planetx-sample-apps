@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="access token"
+        android:id="@+id/accessToken"
+        />
+   <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="oAuth 인증"
+        android:onClick="OnStartOneIdAuth" />    
+		
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="oAuth Key 재발급"
+        android:onClick="OnAccountReIssue" 
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access Token"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:onClick="OnLogout" 
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Token"
+        android:onClick="OnReadToken" />
+	
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent" >
+	    <EditText 
+	        android:id="@+id/groupedit"
+	        android:layout_height="50dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1" />
+		<Button
+		    android:id="@+id/creategroup"
+		    android:layout_height="50dp"
+		    android:layout_width="0dp"
+	        android:layout_weight="1"
+		    android:text="Create group"
+		    android:onClick="onCreateGroup" />
+    </LinearLayout>    
+        
+    <Button
+	    android:id="@+id/requestgroup"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:text="Request group list"
+	    android:onClick="onRequestGroup" />
+    
+    <Button
+	    android:id="@+id/requesttag"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:text="Request Tag list"
+	    android:onClick="onRequestTag" />    
+	    
+	<ListView
+	    android:id="@android:id/list"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent" />    
+
+</LinearLayout>

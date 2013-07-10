@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<ListView 
+	    android:id="@+id/dialoglist"
+	    android:layout_height="wrap_content" 
+	    android:layout_width="fill_parent" />
+	<LinearLayout android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent" >
+        
+	    <Button 
+	        android:id="@+id/addlistgroupbutton"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="4" 
+	        android:text="그룹에 추가" />
+		<Button 
+	        android:id="@+id/dellistgroupbutton"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="4" 
+	        android:text="그룹에서 삭제" />	    
+	    <Button 
+	        android:id="@+id/listdetailbutton"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:text="상세 보기" />
+    </LinearLayout>
+</LinearLayout>

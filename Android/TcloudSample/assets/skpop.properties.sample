@@ -1,0 +1,6 @@
+# 이 파일의 이름skpop.properties로 변경해주세요.
+# appId와 clientId, clientSeceret는 https://developer.skpalnetx.com에서 발급받을 수 있습니다.
+skpop.appId=please_write_your_appId
+skpop.clientId=please_write_your_client_id
+skpop.clientSecret=please_write_your_client_secret
+skpop.scope=tcloud

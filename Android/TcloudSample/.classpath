@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/PlanetX_SDK_And.jar"/>
+	<classpathentry kind="lib" path="libs/SKPOP_SDK_OAuth_And_1.0.4.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

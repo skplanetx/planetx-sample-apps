@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <Button 
+           android:layout_width="0dp"
+           android:layout_height="wrap_content" 
+           android:layout_weight="1"
+           android:text="view"
+           android:onClick="onPhotoView"/>
+       <Button 
+           android:layout_width="0dp"
+           android:layout_height="wrap_content" 
+           android:layout_weight="1"
+           android:text="share url"
+           android:onClick="onUrlView"/>
+       <Button 
+           android:layout_width="0dp"
+           android:layout_height="wrap_content" 
+           android:layout_weight="1"
+           android:text="download"
+           android:onClick="onDownload"/>
+       
+    </LinearLayout>           
+ 
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="  name" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photonameedit" />
+            
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="  resolution" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photoresolutionedit" />
+            
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="imageId" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photoimageidedit" />
+            
+    </LinearLayout>
+            
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="   size" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photosizeedit" />
+            
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="create date" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photocreatedateedit" />
+            
+    </LinearLayout>
+      
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="modified date" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photomodifieddateedit" />
+            
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="path" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photopathedit" />
+            
+    </LinearLayout>  
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="storage id" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photostorageidedit" />
+            
+    </LinearLayout> 
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="download uri" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photodownloaduriedit" />
+            
+    </LinearLayout>                
+        
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="thumbpath" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/photothumbpathedit" />
+            
+    </LinearLayout>    
+         
+        
+    </LinearLayout>
+    
+
+    </ScrollView>
+        
+
+</LinearLayout>
